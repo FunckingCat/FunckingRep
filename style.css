@@ -1,0 +1,110 @@
+body{
+    width: 100%;
+    min-width: 1100px;
+}
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+nav{
+    width: 100%;
+    margin-right: 12%;
+    margin-top: 55px;
+    display: flex;
+    justify-content: flex-end;
+}
+.headder{
+    background-color: black;
+    display: flex;
+}
+
+.logo{
+    color: white;
+    font-size: 34px;
+    margin-left: 12%;
+    margin-top: 50px;
+}
+
+.nav_item{
+    font-size: 24px;
+    text-decoration: none;
+    display: flex;
+    color: white;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.icon{
+    display: none;
+}
+
+.nav_item:hover{
+    border-bottom: 6px solid  #fcac45;
+}
+
+@media screen and (max-width: 1350px) {
+    .nav_item{
+        display: none;
+    }
+
+    .icon{
+        display: block;
+    }
+
+}
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding-top: 20%;
+    padding-bottom: 30%;
+}
+
+.welcome>.p1{
+    font-size: 50px;
+}
+
+.welcome>.p2{
+    font-size: 30px;
+}
+
+.makeYellow{
+    color: #fcac45;
+}
+
+.about{
+    padding-top: 14%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.left_side, .right_side{
+      width: 40%;
+}
+
+.right_side>.p1{
+    font-size: 55px;
+    padding:10px;
+    border-bottom: 5px solid #fcac45;
+}
+
+.right_side>.p2{
+    padding: 16px;
+    font-size: 32px;
+}
+
+.ul_item{
+    padding: 10px;
+    font-size: 30px;
+}
+
+.left_side{
+    padding-left: 2%;
+}
