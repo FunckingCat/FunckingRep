@@ -79,6 +79,7 @@ nav{
 
 .about{
     padding-top: 14%;
+    padding-bottom: 10%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -107,4 +108,51 @@ nav{
 
 .left_side{
     padding-left: 2%;
+}
+
+.team{
+    background-color: black;
+    color: white;
+    padding-top: 5%;
+    padding-bottom: 14%;
+}
+
+.team>.h1-tag{
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+}
+
+.team>.h1-tag>h1{
+    border-bottom: 4px solid #fcac45;
+}
+
+.team>.persons{
+    display: flex;
+    padding: 5%;
+}
+
+.team>.persons>.person>.img{
+    margin: 0 auto;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color:rgb(181, 181, 181);
+}
+
+.name, .text{
+    width: 170px;
+    text-align: center;
+    padding-top: 16px;
+}
+
+.name{
+    font-weight: 600;
+}
+
+.persons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
