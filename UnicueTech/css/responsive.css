@@ -1,0 +1,29 @@
+@media (max-width: 1010px) {
+  body > * {
+    padding-left: 20px;
+    padding-right: 60px; }
+  header .container .hat {
+    min-width: 794px; }
+    header .container .hat nav ul li {
+      display: none; }
+    header .container .hat nav ul li:last-child {
+      display: block; }
+  .whatwedo {
+    padding-left: 20px;
+    padding-right: 60px; }
+    .whatwedo section:nth-child(n) {
+      padding: 0 0;
+      flex-direction: column; }
+      .whatwedo section:nth-child(n) article {
+        width: 100%; }
+        .whatwedo section:nth-child(n) article h3, .whatwedo section:nth-child(n) article p {
+          text-align: center;
+          font-size: 1.3rem; }
+  .ourfeatures {
+    padding-left: 20px;
+    padding-right: 60px; } }
+
+@media (max-width: 499px) {
+  body > * {
+    padding-left: 20px;
+    padding-right: 60px; } }

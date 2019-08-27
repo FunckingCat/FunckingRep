@@ -1,0 +1,44 @@
+@mixin paddings (){
+    padding-left: 20px;
+    padding-right: 60px;
+}
+
+@media (max-width: 1010px){
+    body > * {@include paddings();}
+
+    header .container .hat{
+        min-width: 794px;
+        nav{
+           ul li{display: none}
+           ul li:last-child{display: block}
+       }
+    }
+
+    .whatwedo{
+        @include paddings();
+        section:nth-child(n){
+            padding: 0 0;
+            flex-direction: column;
+
+            article{
+                width: 100%;
+
+                h3, p{
+                    text-align: center;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+
+    .ourfeatures{
+        @include paddings();
+        .row{
+
+        }
+    }
+}
+
+@media (max-width: 499px){
+    body > * {@include paddings();}
+}
