@@ -1,28 +1,11 @@
-function assert(a, b){
-    if (a==b)console.log(`${a} OK`);
-    else console.log(`${a} не равно ${b}`);
+for (let item of Array.from($("div"))){
+  console.log(item)
 }
 
-function search(val, arr){
-    for(let i in arr) if (val == arr[i]) return true
-    return false
-}
+$($('div')[0]).addClass('green')
+$('div').each(function() {
+  console.log($(this).attr('class'))
+});
 
-function divToDigits(num){
-    let digits = [];
-    while (num>0){
-        digits.push(num%10);
-        num = Math.floor(num/10);
-    }
-    return digits.reverse();
-}
-
-function unique(arr) {
-  return new Set(arr)
-}
-
-let strings = ["кришна", "кришна", "харе", "харе",
-  "харе", "харе", "кришна", "кришна", ":-O"
-];
-
-console.log( unique(strings) ); // кришна, харе, :-O
+setTimeout(()=> $('div').first().removeClass('green'),1000)
+setTimeout(()=> $('div').first().addClass('blue'),2000)
